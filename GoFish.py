@@ -8,8 +8,8 @@ fenetre.title("Go Fish")
 fenetre.configure(background='LightSeaGreen')
 fenetre.iconphoto(False, tk.PhotoImage(file="Image/GoFishLogo.png"))
 fenetre.resizable(0, 0)
-largeurF = fenetre.winfo_width
-hauteurF = fenetre.winfo_height
+
+# on définit l'image
 img = tk.PhotoImage(file="Image/GoFishLogoApp.png")
 labFont = tk.Label(image=img, bg='LightSeaGreen')
 labFont.pack()
