@@ -5,10 +5,14 @@ from tkinter.constants import ANCHOR, END
 # on définit la fenêtre
 fenetre = tk.Tk()
 fenetre.title("Go Fish")
-fenetre.configure(background='white')
-fenetre.iconphoto(False, tk.PhotoImage("Image/GoFishLogo.png"))
+fenetre.configure(background='LightSeaGreen')
+fenetre.iconphoto(False, tk.PhotoImage(file="Image/GoFishLogo.png"))
 fenetre.resizable(0, 0)
-
+largeurF = fenetre.winfo_width
+hauteurF = fenetre.winfo_height
+img = tk.PhotoImage(file="Image/GoFishLogoApp.png")
+labFont = tk.Label(image=img, bg='LightSeaGreen')
+labFont.pack()
 # fonction qui définit ce que le programme doit faire si le bouton valider est cliqué
 
 
@@ -95,7 +99,7 @@ def valider():
     # lorque l'on est à la troisième question du programme
     elif btnValider.click == 3:
         fish = choix
-        list.grid_forget()  # on fait disparaître la listbox
+        list.pack_forget()  # on fait disparaître la listbox
 
         # on affiche les caratéristiques du poisson choisit
         for i in range(1, len(caractFish)):
@@ -103,20 +107,24 @@ def valider():
                 nbFish = i
         if typePeche == "pêche en mer":
             label.config(
-                text=f"  \n \n Vous voulez pêcher le poisson {caractFish[nbFish][0]} vous aurez besoin \n comme appât : {caractFish[nbFish][4]} \n comme leurre/technique : {caractFish[nbFish][5]} \n les coins de pêche sont : {caractFish[nbFish][7]} \n Attention la taille minimal autorisée est : {caractFish[nbFish][3]} cm")
+                text=f"Vous voulez pêcher le poisson {caractFish[nbFish][0]} vous aurez besoin \n comme appât : {caractFish[nbFish][4]} \n comme leurre/technique : {caractFish[nbFish][5]} \n les coins de pêche sont : {caractFish[nbFish][7]} \n Attention la taille minimal autorisée est : {caractFish[nbFish][3]} cm")
         if typePeche == "pêche au bord":
             label.config(
-                text=f" \n \n Vous voulez pêcher le poisson {caractFish[nbFish][0]} vous aurez besoin \n comme appât : {caractFish[nbFish][4]} \n comme leurre/technique : {caractFish[nbFish][5]} \n les coins de pêche sont : {caractFish[nbFish][6]} \n Attention la taille minimal autorisée est : {caractFish[nbFish][3]} cm")
-        btnValider.grid_forget()
+                text=f"Vous voulez pêcher le poisson {caractFish[nbFish][0]} vous aurez besoin \n comme appât : {caractFish[nbFish][4]} \n comme leurre/technique : {caractFish[nbFish][5]} \n les coins de pêche sont : {caractFish[nbFish][6]} \n Attention la taille minimal autorisée est : {caractFish[nbFish][3]} cm")
+        btnValider.pack_forget()
         
+
+# on affiche la première question
+label = tk.Label(fenetre, text="Appuyez sur la touche correspondant a la saison actuel", bg='white', fg='black',font=10, borderwidth=10)
+label.pack(pady=20)
 
 # on définit la listbox dans lequel on affiche les choix possibles
 list = tk.Listbox(fenetre)
-list.grid(row=1, column=0)
+list.pack(pady=20)
 
 # on crée le bouton valider
 btnValider = tk.Button(fenetre, height=1, width=10, text="Valider", command=valider)
-btnValider.grid(row=2, column=0)
+btnValider.pack(pady=20)
 btnValider.click = 0  # on initialise le nombre de click du boutton à 0
 
 # on récupère les données contenus dans le fichier Poisson.csv
@@ -129,10 +137,6 @@ with open("Données/Poissons.csv", "r") as f:
 saison = ["été", "printemps", "hiver", "automne"]
 for i in range(len(saison)):
     list.insert(END, saison[i])
-
-# on affiche la première question
-label = tk.Label(fenetre, text="Appuyez sur la touche correspondant a la saison actuel", bg='white', fg='black', font=10)
-label.grid(row=0, column=0)
 
 # on initialise les variables qui vont servir à enregistrer les choix effectuer par l'utilisateur
 saisonChoix, typePeche, fish = "", "", ""
