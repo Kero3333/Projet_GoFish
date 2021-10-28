@@ -3,7 +3,7 @@
 
 # Projet Go Fish
 
-Ce projet à pour objectif de proposer des conseils sur la pêche ainsi que de proposer des kits de pêche à la vente.  
+Ce projet a pour objectif de proposer des conseils sur la pêche ainsi que de proposer des kits de pêche à la vente.  
 L'application se concentre sur les conseils de pêche dans la zone géographique de Dinard.
 
 ## Pré-requis
@@ -16,12 +16,12 @@ L'application se concentre sur les conseils de pêche dans la zone géographique
 
 ## Démarrage
 
-Dans votre terminal effectuer la commande suivante en étant dans le répertoire "Projet_GoFish" :  
+Dans votre terminal effectuez la commande suivante en étant dans le répertoire "Projet_GoFish" :  
 **python3 GoFish.py**
 
 ## Fonctionnement
 
-* Sélectionner à l'aide de la souris l'une des proposition qu'il vous sera proposé
+* Sélectionner à l'aide de la souris l'une des propositions qu'il vous sera proposé
 * Cliquer sur le bouton valider afin de valider la proposition sélectionner
 
 ## Auteurs
