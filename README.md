@@ -32,5 +32,5 @@ Dans votre terminal effectuer la commande suivante en étant dans le répertoire
 
 ### Le site web :  
 * Yassine Amekraz [![IconeGithub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AmekrazY)
-* Thomas Julien [![IconeGithub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/UneBaguette) 
+* Thomas Julien [![IconeGithub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/THom1331) 
 * Owen Mougenot [![IconeGithub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/owenmougenot)
