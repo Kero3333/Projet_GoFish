@@ -31,7 +31,7 @@ def valider():
         saisonChoix = choix  # on récupère le choix de la saison
         # on réactualise la question ainsi que les choix contenus dans la listbox
         list.delete(0, END)
-        label.config(text="Appuyez sur la touche correspondant au mode de pêche que vous souhaitez")
+        label.config(text="Sélectionnez le mode de pêche que vous souhaitez")
         choixTypePeche = ["pêche en mer", "pêche au bord"]
         for i in range(len(choixTypePeche)):
             list.insert(END, choixTypePeche[i])
@@ -112,12 +112,12 @@ def valider():
                 text=f"Vous voulez pêcher le poisson {caractFish[nbFish][0]} vous aurez besoin \n comme appât : {caractFish[nbFish][4]} \n comme leurre/technique : {caractFish[nbFish][5]} \n les coins de pêche sont : {caractFish[nbFish][7]} \n Attention la taille minimal autorisée est : {caractFish[nbFish][3]} cm")
         if typePeche == "pêche au bord":
             label.config(
-                text=f"Vous voulez pêcher le poisson {caractFish[nbFish][0]} vous aurez besoin \n comme appât : {caractFish[nbFish][4]} \n comme leurre/technique : {caractFish[nbFish][5]} \n les coins de pêche sont : {caractFish[nbFish][6]} \n Attention la taille minimal autorisée est : {caractFish[nbFish][3]} cm")
+                text=f"Vous voulez pêcher le poisson {caractFish[nbFish][0]} vous aurez besoin \n comme appât : {caractFish[nbFish][4]} \n comme leurre/technique : {caractFish[nbFish][5]} \n   {caractFish[nbFish][6]} \n Attention la taille minimal autorisée est : {caractFish[nbFish][3]} cm")
         btnValider.pack_forget()
         
 
 # on affiche la première question
-label = tk.Label(fenetre, text="Appuyez sur la touche correspondant a la saison actuel", bg='white', fg='black',font=10, borderwidth=10)
+label = tk.Label(fenetre, text="Sélectionnez la saison actuelle", bg='white', fg='black',font=10, borderwidth=10)
 label.pack(pady=20)
 
 # on définit la listbox dans lequel on affiche les choix possibles
