@@ -26,8 +26,11 @@ Dans votre terminal effectuer la commande suivante en étant dans le répertoire
 
 ## Auteurs
 
+### L'application :  
 * Kévin Robic [![IconeGithub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Kero3333) 
-* Mathieu Peran [![IconeGithub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mathieu-URA) 
+* Mathieu Peran [![IconeGithub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mathieu-URA)   
+
+### Le site web :  
 * Yassine Amekraz [![IconeGithub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AmekrazY)
 * Thomas Julien [![IconeGithub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/UneBaguette) 
 * Owen Mougenot [![IconeGithub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/owenmougenot)
