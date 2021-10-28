@@ -22,7 +22,7 @@ Dans votre terminal effectuez la commande suivante en étant dans le répertoire
 ## Fonctionnement
 
 * Sélectionner à l'aide de la souris l'une des propositions qu'il vous sera proposé
-* Cliquer sur le bouton valider afin de valider la proposition sélectionner
+* Cliquez sur le bouton valider afin de valider la proposition sélectionner
 
 ## Auteurs
 
