@@ -3,7 +3,7 @@
 
 # Projet Go Fish
 
-Ce projet à pour objectif de proposer des conseils sur la pêche ainsi que de proposer des kits de pêche à la vente.
+Ce projet à pour objectif de proposer des conseils sur la pêche ainsi que de proposer des kits de pêche à la vente.  
 L'application se concentre sur les conseils de pêche dans la zone géographique de Dinard.
 
 ## Pré-requis
