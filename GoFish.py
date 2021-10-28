@@ -13,6 +13,8 @@ hauteurF = fenetre.winfo_height
 img = tk.PhotoImage(file="Image/GoFishLogoApp.png")
 labFont = tk.Label(image=img, bg='LightSeaGreen')
 labFont.pack()
+
+
 # fonction qui définit ce que le programme doit faire si le bouton valider est cliqué
 
 
