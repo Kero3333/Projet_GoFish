@@ -4,6 +4,7 @@
 # Projet Go Fish
 
 Ce projet a pour objectif de proposer des conseils sur la pêche ainsi que de proposer des kits de pêche à la vente.  
+Lien du site web : https://owenmougenot.bubbleapps.io/version-test  
 L'application se concentre sur les conseils de pêche dans la zone géographique de Dinard.
 
 ## Pré-requis
